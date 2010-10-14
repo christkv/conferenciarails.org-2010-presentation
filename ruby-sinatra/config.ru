@@ -3,47 +3,26 @@ require "rubygems"
 require "bundler/setup"
 
 # Require all normal gems
-require 'sinatra/async'
-require 'em-mysqlplus'
-
-# conn = nil
-
-# EventMachine.run {
-  # conn = EventMachine::MySQL.new(:host => 'localhost')
-# }
+require 'sinatra'
+require 'mysql'
 
 class AsyncTest < Sinatra::Base
-  register Sinatra::Async
-
-  # configure do
-  #   conn = EventMachine::MySQL.new(:host => 'localhost')
-  # end
-
-  aget '/' do
-    body "hello async"
+  configure do
+    @@conn = nil
   end
 
-  aget '/delay/:n' do |n|
-    conn = conn.nil? ? EventMachine::MySQL.new(:host => 'localhost', :database => 'widgets') : conn
-    # EM.add_timer(n.to_i) { body { "delayed for #{n} seconds" } }
-    query = conn.query("select * from test")
-    query.callback do |res|
-      text = ""
+  get '/delay/:n' do |n|
+    @@conn = @@conn.nil? ? Mysql.connect("localhost", "root", "", "widgets") : @@conn
+    text = ""
 
-      while row = res.fetch_row
-        text += row.inspect.to_s
-      end
+    # execute query
+    res = query = @@conn.query("select * from test")
 
-      body {
-        text
-      }
+    while row = res.fetch_row
+      text += row.inspect.to_s
     end
-    
-    query.errback {
-      |res| body {
-        p res.to_s
-      }      
-    }  
+      
+    text
   end
 end
 

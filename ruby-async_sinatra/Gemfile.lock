@@ -1,0 +1,46 @@
+GIT
+  remote: git://github.com/igrigorik/em-synchrony.git
+  revision: 31ae2eabdd630e9b3382e33b8054676ca5450528
+  specs:
+    em-synchrony (0.1.5)
+      eventmachine (>= 0.12.9)
+
+GIT
+  remote: git://github.com/oldmoe/mysqlplus.git
+  revision: 2daef86c487ec1c531ecfe84ed342d15a1c89554
+  specs:
+    mysqlplus (0.1.1)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    async_sinatra (0.3.0)
+      sinatra (>= 1.0)
+    daemons (1.1.0)
+    em-mysqlplus (0.1.5)
+      eventmachine (>= 0.12.9)
+    eventmachine (0.12.10)
+    rack (1.2.1)
+    rack-fiber_pool (0.9.0)
+    sinatra (1.0)
+      rack (>= 1.0)
+    thin (1.2.7)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
+    unicorn (1.1.4)
+      rack
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  async_sinatra
+  em-mysqlplus
+  em-synchrony!
+  eventmachine
+  mysqlplus!
+  rack-fiber_pool
+  sinatra
+  thin
+  unicorn

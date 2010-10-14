@@ -1,0 +1,117 @@
+GIT
+  remote: git://github.com/eventmachine/eventmachine.git
+  revision: 6c79977980345f2e3b55b18a8cd690485793f8fe
+  specs:
+    eventmachine (0.12.11)
+
+GIT
+  remote: git://github.com/igrigorik/em-http-request.git
+  revision: f069bb9b68335496c8f32475b79e448847befdae
+  specs:
+    em-http-request (0.2.14)
+      addressable (>= 2.0.0)
+      eventmachine (>= 0.12.9)
+
+GIT
+  remote: git://github.com/igrigorik/em-mysqlplus.git
+  revision: db0feabdc0117ca5e97df35f259e76a4d9ba8a60
+  specs:
+    em-mysqlplus (0.1.5)
+      eventmachine (>= 0.12.9)
+
+GIT
+  remote: git://github.com/igrigorik/em-synchrony.git
+  revision: 31ae2eabdd630e9b3382e33b8054676ca5450528
+  specs:
+    em-synchrony (0.1.5)
+      eventmachine (>= 0.12.9)
+
+GIT
+  remote: git://github.com/oldmoe/mysqlplus.git
+  revision: 2daef86c487ec1c531ecfe84ed342d15a1c89554
+  specs:
+    mysqlplus (0.1.1)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    abstract (1.0.0)
+    actionmailer (3.0.0)
+      actionpack (= 3.0.0)
+      mail (~> 2.2.5)
+    actionpack (3.0.0)
+      activemodel (= 3.0.0)
+      activesupport (= 3.0.0)
+      builder (~> 2.1.2)
+      erubis (~> 2.6.6)
+      i18n (~> 0.4.1)
+      rack (~> 1.2.1)
+      rack-mount (~> 0.6.12)
+      rack-test (~> 0.5.4)
+      tzinfo (~> 0.3.23)
+    activemodel (3.0.0)
+      activesupport (= 3.0.0)
+      builder (~> 2.1.2)
+      i18n (~> 0.4.1)
+    activerecord (3.0.0)
+      activemodel (= 3.0.0)
+      activesupport (= 3.0.0)
+      arel (~> 1.0.0)
+      tzinfo (~> 0.3.23)
+    activeresource (3.0.0)
+      activemodel (= 3.0.0)
+      activesupport (= 3.0.0)
+    activesupport (3.0.0)
+    addressable (2.2.2)
+    arel (1.0.1)
+      activesupport (~> 3.0.0)
+    builder (2.1.2)
+    erubis (2.6.6)
+      abstract (>= 1.0.0)
+    i18n (0.4.1)
+    mail (2.2.7)
+      activesupport (>= 2.3.6)
+      mime-types
+      treetop (>= 1.4.5)
+    mime-types (1.16)
+    polyglot (0.3.1)
+    rack (1.2.1)
+    rack-fiber_pool (0.9.0)
+    rack-mount (0.6.13)
+      rack (>= 1.0.0)
+    rack-test (0.5.6)
+      rack (>= 1.0)
+    rails (3.0.0)
+      actionmailer (= 3.0.0)
+      actionpack (= 3.0.0)
+      activerecord (= 3.0.0)
+      activeresource (= 3.0.0)
+      activesupport (= 3.0.0)
+      bundler (~> 1.0.0)
+      railties (= 3.0.0)
+    railties (3.0.0)
+      actionpack (= 3.0.0)
+      activesupport (= 3.0.0)
+      rake (>= 0.8.4)
+      thor (~> 0.14.0)
+    rake (0.8.7)
+    sinatra (1.0)
+      rack (>= 1.0)
+    thor (0.14.3)
+    treetop (1.4.8)
+      polyglot (>= 0.3.1)
+    tzinfo (0.3.23)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  addressable
+  em-http-request!
+  em-mysqlplus!
+  em-synchrony!
+  eventmachine!
+  mysqlplus!
+  rack-fiber_pool
+  rails (= 3.0.0)
+  sinatra
