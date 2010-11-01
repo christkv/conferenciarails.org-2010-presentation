@@ -18,5 +18,5 @@ test:
 production:
   adapter: em_mysqlplus
   database: widgets
-  pool: 200
+  pool: 60
   timeout: 5000

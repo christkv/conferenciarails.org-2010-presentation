@@ -1,0 +1,47 @@
+DATE            TIME             ELAPSED      CPU      MEM      RSS    VSIZE
+2010-10-29      16:56:20.592475    00:00      0.0      0.1     2580  2439860
+2010-10-29      16:56:21.598994    00:01     44.8      0.5    21876  2462476
+2010-10-29      16:56:22.607643    00:02      1.1      0.5    21876  2462476
+2010-10-29      16:56:23.616299    00:03      0.0      0.5    21876  2462476
+2010-10-29      16:56:24.624813    00:04      0.0      0.5    21876  2462476
+2010-10-29      16:56:25.634948    00:05     67.3      0.6    26812  2472716
+2010-10-29      16:56:26.644031    00:06     17.5      0.7    29040  2473740
+2010-10-29      16:56:27.663985    00:07      0.4      0.7    29040  2473740
+
+Server Software:        thin
+Server Hostname:        127.0.0.1
+Server Port:            3000
+
+Document Path:          /widgets
+Document Length:        27 bytes
+
+Concurrency Level:      250
+Time taken for tests:   0.923 seconds
+Complete requests:      1000
+Failed requests:        10
+   (Connect: 10, Receive: 0, Length: 0, Exceptions: 0)
+Write errors:           0
+Total transferred:      146000 bytes
+HTML transferred:       27000 bytes
+Requests per second:    1083.63 [#/sec] (mean)
+Time per request:       230.707 [ms] (mean)
+Time per request:       0.923 [ms] (mean, across all concurrent requests)
+Transfer rate:          154.50 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   2.3      0       9
+Processing:    27  145  32.2    159     192
+Waiting:       25  145  32.2    159     192
+Total:         35  146  30.9    160     193
+
+Percentage of the requests served within a certain time (ms)
+  50%    160
+  66%    163
+  75%    167
+  80%    169
+  90%    171
+  95%    172
+  98%    182
+  99%    188
+ 100%    193 (longest request)

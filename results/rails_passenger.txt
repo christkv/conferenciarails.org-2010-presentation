@@ -1,0 +1,38 @@
+Server Software:        nginx/0.8.52
+Server Hostname:        127.0.0.1
+Server Port:            3000
+
+Document Path:          /widgets
+Document Length:        193 bytes
+
+Concurrency Level:      250
+Time taken for tests:   4.567 seconds
+Complete requests:      2000
+Failed requests:        119
+   (Connect: 1, Receive: 0, Length: 118, Exceptions: 0)
+Write errors:           0
+Non-2xx responses:      1882
+Total transferred:      714484 bytes
+HTML transferred:       365940 bytes
+Requests per second:    437.92 [#/sec] (mean)
+Time per request:       570.884 [ms] (mean)
+Time per request:       2.284 [ms] (mean, across all concurrent requests)
+Transfer rate:          152.78 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    7  42.0      3     926
+Processing:     0  283 1015.8     29    4548
+Waiting:        0  281 1016.3     26    4548
+Total:         13  290 1017.0     35    4555
+
+Percentage of the requests served within a certain time (ms)
+  50%     35
+  66%     39
+  75%     40
+  80%     42
+  90%     79
+  95%   4157
+  98%   4439
+  99%   4483
+ 100%   4555 (longest request)

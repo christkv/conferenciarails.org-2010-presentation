@@ -1,0 +1,204 @@
+================================================================================== NODEJS (JS MYSQL DRIVER)
+DB Pool: 60
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            3000
+
+Document Path:          /widgets
+Document Length:        12 bytes
+
+Concurrency Level:      200
+Time taken for tests:   1.030 seconds
+Complete requests:      200
+Failed requests:        0
+Write errors:           0
+Total transferred:      15200 bytes
+HTML transferred:       2400 bytes
+Requests per second:    194.21 [#/sec] (mean)
+Time per request:       1029.816 [ms] (mean)
+Time per request:       5.149 [ms] (mean, across all concurrent requests)
+Transfer rate:          14.41 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    7   3.2      7      13
+Processing:   209  449 190.5    424     840
+Waiting:      208  449 190.7    424     840
+Total:        215  456 190.7    436     848
+
+Percentage of the requests served within a certain time (ms)
+  50%    436
+  66%    609
+  75%    625
+  80%    628
+  90%    649
+  95%    828
+  98%    830
+  99%    847
+ 100%    848 (longest request)
+
+================================================================================ NODEJS (JS MYSQL NATIVE DRIVER)
+DB Pool: 60
+
+Server Software:        
+Server Hostname:        127.0.0.1
+Server Port:            3000
+
+Document Path:          /widgets
+Document Length:        12 bytes
+
+Concurrency Level:      200
+Time taken for tests:   5.237 seconds
+Complete requests:      200
+Failed requests:        0
+Write errors:           0
+Total transferred:      15200 bytes
+HTML transferred:       2400 bytes
+Requests per second:    38.19 [#/sec] (mean)
+Time per request:       5236.991 [ms] (mean)
+Time per request:       26.185 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.83 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  197 388.4      7     985
+Processing:   210 2348 1183.8   2420    4244
+Waiting:      210 2348 1183.8   2420    4244
+Total:        215 2544 1366.4   2628    5229
+
+Percentage of the requests served within a certain time (ms)
+  50%   2628
+  66%   3432
+  75%   3813
+  80%   4009
+  90%   4225
+  95%   4630
+  98%   5026
+  99%   5034
+ 100%   5229 (longest request)
+
+===================================================================================== ASYNC SINATRA
+DB Pool: 60
+
+Server Software:        thin
+Server Hostname:        127.0.0.1
+Server Port:            3000
+
+Document Path:          /widgets
+Document Length:        11 bytes
+
+Concurrency Level:      200
+Time taken for tests:   0.842 seconds
+Complete requests:      200
+Failed requests:        0
+Write errors:           0
+Total transferred:      26000 bytes
+HTML transferred:       2200 bytes
+Requests per second:    237.42 [#/sec] (mean)
+Time per request:       842.402 [ms] (mean)
+Time per request:       4.212 [ms] (mean, across all concurrent requests)
+Transfer rate:          30.14 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    7   2.4      9       9
+Processing:   213  446 159.8    433     636
+Waiting:      212  445 160.3    432     636
+Total:        222  453 158.1    441     642
+
+Percentage of the requests served within a certain time (ms)
+  50%    441
+  66%    598
+  75%    619
+  80%    635
+  90%    638
+  95%    641
+  98%    641
+  99%    641
+ 100%    642 (longest request)
+
+===================================================================================== ASYNC RAILS
+Fiber-pool: 400
+DB Pool: 60
+
+Server Software:        thin
+Server Hostname:        127.0.0.1
+Server Port:            3000
+
+Document Path:          /widgets
+Document Length:        11 bytes
+
+Concurrency Level:      200
+Time taken for tests:   0.945 seconds
+Complete requests:      200
+Failed requests:        0
+Write errors:           0
+Total transferred:      55550 bytes
+HTML transferred:       2222 bytes
+Requests per second:    211.58 [#/sec] (mean)
+Time per request:       945.278 [ms] (mean)
+Time per request:       4.726 [ms] (mean, across all concurrent requests)
+Transfer rate:          57.39 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    3   2.5      4       7
+Processing:   216  381 103.5    347     628
+Waiting:      216  374 103.1    338     628
+Total:        216  384 104.7    353     633
+
+Percentage of the requests served within a certain time (ms)
+  50%    353
+  66%    439
+  75%    443
+  80%    445
+  90%    542
+  95%    604
+  98%    622
+  99%    633
+ 100%    633 (longest request)
+
+===================================================================================== RAILS PASSENGERS
+DB Pool: 200
+
+Server Software:        nginx/0.8.52
+Server Hostname:        127.0.0.1
+Server Port:            3000
+
+Document Path:          /widgets
+Document Length:        193 bytes
+
+Concurrency Level:      200
+Time taken for tests:   7.830 seconds
+Complete requests:      200
+Failed requests:        123
+   (Connect: 0, Receive: 0, Length: 123, Exceptions: 0)
+Write errors:           0
+Non-2xx responses:      77
+Total transferred:      74198 bytes
+HTML transferred:       16214 bytes
+Requests per second:    25.54 [#/sec] (mean)
+Time per request:       7829.863 [ms] (mean)
+Time per request:       39.149 [ms] (mean, across all concurrent requests)
+Transfer rate:          9.25 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        2    4   1.5      4       7
+Processing:    11 3462 2912.1   4242    7822
+Waiting:       11 3462 2912.2   4242    7822
+Total:         15 3466 2912.2   4249    7825
+
+Percentage of the requests served within a certain time (ms)
+  50%   4249
+  66%   5295
+  75%   6055
+  80%   6457
+  90%   7093
+  95%   7466
+  98%   7665
+  99%   7703
+ 100%   7825 (longest request)
+
+

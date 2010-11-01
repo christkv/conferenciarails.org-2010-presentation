@@ -1,4 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'sinatra'
-gem 'mysql'
+gem 'mysqlplus'
+# gem 'mysql'
+gem 'thin'
+gem 'unicorn'

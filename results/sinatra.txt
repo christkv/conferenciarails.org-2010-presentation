@@ -1,0 +1,42 @@
+2010-10-29      16:58:53.268564    00:00      0.0      0.1     2368  2439860
+2010-10-29      16:58:54.273105    00:01     44.5      0.6    23540  2464516
+2010-10-29      16:58:55.283096    00:02     76.4      0.6    25772  2466564
+2010-10-29      16:58:56.294130    00:03     11.0      0.6    26456  2466564
+
+Server Software:        thin
+Server Hostname:        127.0.0.1
+Server Port:            3000
+
+Document Path:          /widgets
+Document Length:        416 bytes
+
+Concurrency Level:      250
+Time taken for tests:   0.986 seconds
+Complete requests:      2000
+Failed requests:        0
+Write errors:           0
+Non-2xx responses:      2000
+Total transferred:      1120000 bytes
+HTML transferred:       832000 bytes
+Requests per second:    2027.93 [#/sec] (mean)
+Time per request:       123.279 [ms] (mean)
+Time per request:       0.493 [ms] (mean, across all concurrent requests)
+Transfer rate:          1109.02 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   2.1      1      13
+Processing:    25   47  13.3     43      77
+Waiting:       21   43  13.1     38      75
+Total:         28   48  13.2     44      78
+
+Percentage of the requests served within a certain time (ms)
+  50%     44
+  66%     59
+  75%     61
+  80%     61
+  90%     64
+  95%     67
+  98%     74
+  99%     76
+ 100%     78 (longest request)

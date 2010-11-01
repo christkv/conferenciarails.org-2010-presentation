@@ -8,21 +8,35 @@ require 'mysql'
 
 class AsyncTest < Sinatra::Base
   configure do
-    @@conn = nil
+    @@conns = []
+    @@index = 0    
+
+    puts "===================================================== 1"
+    100.times do |t|
+      @@conns.push(Mysql.connect("localhost", "root", "", "widgets"))
+    end
+    puts "===================================================== 2"
   end
 
-  get '/delay/:n' do |n|
-    @@conn = @@conn.nil? ? Mysql.connect("localhost", "root", "", "widgets") : @@conn
-    text = ""
-
+  get '/widgets' do
+    # @@conn = @@conn.nil? ? Mysql.connect("localhost", "root", "", "widgets") : @@conn
     # execute query
-    res = query = @@conn.query("select * from test")
+    @@conns[@@index].query("select sleep(0.2)")
+    @@index = (@@index + 1) % 100
 
-    while row = res.fetch_row
-      text += row.inspect.to_s
-    end
-      
-    text
+    "Hello world"
+    # 
+    # @@conn = @@conn.nil? ? Mysql.connect("localhost", "root", "", "widgets") : @@conn
+    # text = ""
+    # 
+    # # execute query
+    # res = query = @@conn.query("select * from test")
+    # 
+    # while row = res.fetch_row
+    #   text += row.inspect.to_s
+    # end
+    #   
+    # text
   end
 end
 

@@ -18,5 +18,5 @@ test:
 production:
   adapter: mysql
   database: widgets
-  pool: 20
+  pool: 200
   timeout: 5000
